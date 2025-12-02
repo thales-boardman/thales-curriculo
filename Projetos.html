@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projetos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin-top: unset;
+      margin-right: unset;
+      margin-left: unset;
+
+    }
+
+    .folder {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      user-select: none;
+    }
+
+    .projects {
+      display: none;
+      margin-left: 28px;
+      margin-top: 8px;
+      padding: 8px;
+      border-left: 2px solid #666;
+    }
+
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      margin-bottom: 6px;
+    }
+
+    .projects a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    .Navbar a {
+  color: #ddd;              /* cor padrão */
+  text-decoration: none;    /* tira o sublinhado */
+}
+
+.Navbar a:hover {
+   color: #66b3ff;      
+}
+
+  </style>
+</head>
+<body>
+
+<header> 
+  <nav class="Navbar" style="background-color: #1e3a63; padding: 10px; font-size: 35px; border: solid 1px black;">
+    <a href='C:\Users\thalesboardman\Desktop\Nova pasta\Currículo\Currículo Thales VS.html'>Currículo</a>
+    <span>&nbsp;</span>
+    <a href='C:\Users\thalesboardman\Desktop\Nova pasta\Currículo\Projetos.html'>Projetos</a>
+    <!-- <a href='/contato'>Contato</a> -->
+  </nav>
+</header>
+
+
+<!-- Projetos/Ajudas/Trabalhos -->
+  <div style="margin-left: 10px;">
+
+ <h2>Projetos desenvolvidos e contribuições</h2> 
+
+  </div>
+  
+  <div style="margin-left: 10px;" class="folder" onclick="toggleProjects()">
+    📁 Projetos
+  </div>
+
+  <div style="margin-left: 10px;" class="projects" id="projects">
+    <ul>
+      <li>🚀 Site Cusco — <a href="https://www.novohamburgo.rs.gov.br/cusco" target="_blank">Site Cusco Prefeitura</a><p>Site Cusco – Prefeitura - Criação de páginas internas utilizando Drupal, CSS e layout institucional.
+</p></li>
+      <li>💻 Formulários — <a href="https://www.novohamburgo.rs.gov.br/form/processo-seletivo-publico-simpl2" target="_blank">Formulários Prefeitura</a><p>Formulários internos – Prefeitura - Desenvolvimento de formulários personalizados para diferentes setores. Os formulários são internos e protegidos, por isso não possuem link público.</p></li>
+      <li>📱 GitHub — <a href="https://github.com/thales-boardman?tab=repositories" target="_blank">Ver no GitHub</a><p>Os projetos principais são: <br><br>• Assinatura Institucional - Gerador de assinatura usado por servidores públicos.<br><br>• Landing Page “Obra Fácil” (Projeto do Instituto Evoluir) - Projeto de curso com boas práticas de HTML/CSS.<br><br>• Site WordPress (Mixmob) - Criação, configuração e ajustes de navegação. </p></li>
+      <li>💻 Nova Intranet — <a href="https://www.youtube.com/watch?v=ZHB-f88vuvU" target="_blank">Nova Intranet</a><p>Projeto ainda em andamento, demonstrado através do vídeo criado pela equipe. Desenvolvimento de modelo inicial para a nova intranet institucional utilizando CodeIgniter 4. Atuei na implementação de:
+
+<br><br>• Footer responsivo
+<br><br>• Sistema de busca de arquivos e ramais
+<br><br>• Página de login
+<br><br>• Upload, renomeação e exclusão de arquivos
+<br><br>• Atualização e gerenciamento de ramais através do banco de dados
+
+<br><br>O projeto tem como <u>objetivo</u> substituir a intranet anterior, que apresentava conteúdo desatualizado e baixa usabilidade.</p></li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleProjects() {
+      const section = document.getElementById("projects");
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
+
+  
+  
