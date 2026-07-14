@@ -3,140 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylemain.css">
   <title>Currículo - Thales Alves Boardman</title>
-  <style>
-    
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #333;
-margin-bottom: -10px;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      min-height: 100vh;
-      margin-bottom: -100px;
-    }
-
-    /* LADO ESQUERDO */
-    .sidebar {
-      background: #1e3a63;
-      color: white;
-      padding: 30px 20px;
-    }
-
-    .sidebar img {
-	width: 240px;
-	height: 270px;
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto 20px;
-    }
-
-    .sidebar h2 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin: 20px 0 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.3);
-      padding-bottom: 5px;
-    }
-
-    .sidebar li, .sidebar a {
-      font-size: 14px;
-      color: #ddd;
-      text-decoration: none;
-    }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .sidebar li::before {
-      content: "• ";
-      color: #66b3ff;
-    }
-
-    /* LADO DIREITO */
-    .main {
-      background: #fff;
-      padding: 40px 50px;
-    }
-
-    .main h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #1e3a63;
-      text-transform: uppercase;
-    }
-
-    .main h3 {
-      margin: 5px 0 20px;
-      font-size: 18px;
-      color: #444;
-    }
-
-    .main section {
-      margin-bottom: 25px;
-    }
-
-    .main h2 {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #1e3a63;
-      margin-bottom: 8px;
-    }
-
-    .main p, .main li {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    .main ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-	  
-	.sidebar a {
-  color: #ddd;              
-  text-decoration: none;    
-  transition: color 0.3s;   
-  font-size: 14px;
-}
-
-	.sidebar a:hover {
-  color: #66b3ff;           
-  text-decoration: underline;
-}
-
-.Navbar a {
-  color: #ddd;             
-  text-decoration: none;   
-}
-
-.Navbar a:hover {
-   color: #66b3ff;      
-}
-
-  </style>
 </head>
 
 
 
 <body>
 
-<header> 
-  <nav class="Navbar" style="background-color: #1e3a63; padding: 10px; font-size: 35px; border: solid 1px black;">
-    <a href='index.html'>Currículo</a>
-    <span>&nbsp;</span>
-    <a href='Projetos.html'>Projetos</a>
-    <!-- <a href='/contato'>Contato</a> -->
-  </nav>
+<header>
+    <nav class="Navbar">
+
+        <div class="logo">
+            <a href="index.html">Currículo</a>
+            <a href="Projetos.html">Projetos</a>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.html">Currículo</a>
+            <a href="Projetos.html">Projetos</a>
+        </div>
+
+        <button id="toggle-theme" class="contraste-btn">
+            Contraste
+        </button>
+
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+    </nav>
 </header>
 
   <div class="container">
@@ -242,6 +138,46 @@ Conclusão prevista: Outubro/2026</p>
     </main>
   </div>
 <br>
+
+<script>
+
+
+    const btn = document.getElementById('toggle-theme');
+    const body = document.body;
+
+    // Se existir preferência salva, aplica
+    if (localStorage.getItem('dark-mode') === 'true') {
+        body.classList.add('dark-mode');
+    }
+
+    btn.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+
+        // Salva a preferência do usuário
+        localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+    });
+
+
+</script>
+
+<script>
+
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu-mobile");
+
+hamburger.addEventListener("click", () => {
+
+    menu.classList.toggle("ativo");
+
+    if(menu.classList.contains("ativo")){
+        hamburger.textContent="✖";
+    }else{
+        hamburger.textContent="☰";
+    }
+
+});
+
+</script>
 
 </body>
 </html>
