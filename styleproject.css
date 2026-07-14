@@ -1,0 +1,193 @@
+body {
+      font-family: Arial, sans-serif;
+      margin-top: unset;
+      margin-right: unset;
+      margin-left: unset;
+
+    }
+
+    .folder {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      user-select: none;
+      margin-left: 10px;
+    }
+
+    .projects {
+      display: none;
+      margin-left: 28px;
+      margin-top: 8px;
+      padding: 8px;
+      border-left: 2px solid #666;
+    }
+
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      margin-bottom: 6px;
+    }
+
+    .projects a {
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1e3a63;
+    padding: 10px;
+    font-size: 35px;
+    border: solid 1px black;
+}
+
+.Navbar a {
+  color: #ddd;              
+  text-decoration: none;    
+  margin-right: 20px;
+}
+
+.Navbar a:hover {
+   color: #66b3ff;      
+}
+
+
+/* Contraste */
+
+.contraste-btn {
+    margin-left: auto; /* empurra o botão para a direita */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background: #1e3a63;
+    color: #ddd;
+    font-size: 18px;
+}
+
+/* ========= CSS contraste ========= */
+
+/* ===== MODO ESCURO ===== */
+
+body.dark-mode .Navbar {
+    background-color: #111;
+}
+
+body.dark-mode .Navbar a {
+    color: #fff;
+}
+
+body.dark-mode .Navbar .menu-mobile {
+    background-color: #111;
+}
+
+
+body.dark-mode .contraste-btn {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+body.dark-mode h1,
+body.dark-mode .folder,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode span,
+body.dark-mode strong {
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #4ea8ff;
+}
+
+/* Esconde o botão no computador */
+.hamburger{
+    display:none;
+    margin-left:15px;
+    border:none;
+    background:none;
+    color:#ddd;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Menu mobile */
+.menu-mobile{
+    display:none;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    .Navbar{
+        position:relative;
+    }
+
+    .logo a{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+        margin-left:auto;
+    }
+
+    .contraste-btn{
+        margin-left:0;
+        margin-right:10px;
+        font-size:16px;
+    }
+
+    .menu-mobile{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#1e3a63;
+
+        display:flex;
+        flex-direction:column;
+
+        max-height:0;
+        overflow:hidden;
+
+        transition:max-height .35s ease;
+    }
+
+    .menu-mobile a{
+
+        color:white;
+        text-decoration:none;
+        padding:18px;
+        text-align:center;
+        border-top:1px solid rgba(255,255,255,.1);
+    }
+
+    .menu-mobile.ativo{
+        max-height:200px;
+    }
+
+}

@@ -1,0 +1,260 @@
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+margin-bottom: -10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+      margin-bottom: -100px;
+    }
+
+    /* LADO ESQUERDO */
+    .sidebar {
+      background: #1e3a63;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .sidebar img {
+	width: 240px;
+	height: 270px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 20px 0 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
+    }
+
+    .sidebar li, .sidebar a {
+      font-size: 14px;
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li::before {
+      content: "• ";
+      color: #66b3ff;
+    }
+
+    /* LADO DIREITO */
+    .main {
+      background: #fff;
+      padding: 40px 50px;
+    }
+
+    .main h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #1e3a63;
+      text-transform: uppercase;
+    }
+
+    .main h3 {
+      margin: 5px 0 20px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .main section {
+      margin-bottom: 25px;
+    }
+
+    .main h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1e3a63;
+      margin-bottom: 8px;
+    }
+
+    .main p, .main li {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .main ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+	  
+	.sidebar a {
+  color: #ddd;              
+  text-decoration: none;    
+  transition: color 0.3s;   
+  font-size: 14px;
+}
+
+	.sidebar a:hover {
+  color: #66b3ff;           
+  text-decoration: underline;
+}
+
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1e3a63;
+    padding: 10px;
+    font-size: 35px;
+    border: solid 1px black;
+}
+
+.Navbar a {
+  color: #ddd;             
+  text-decoration: none;   
+  margin-right: 20px;
+}
+
+.Navbar a:hover {
+   color: #66b3ff;      
+}
+
+.contraste-btn {
+    margin-left: auto; /* empurra o botão para a direita */
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background: #1e3a63;
+    color: #ddd;
+    font-size: 18px;
+}
+
+/* ========= CSS contraste ========= */
+
+/* ===== MODO ESCURO ===== */
+
+body.dark-mode {
+    background-color: #121212;
+}
+
+/* Navbar */
+body.dark-mode .Navbar {
+    background-color: #111;
+}
+
+body.dark-mode .Navbar a {
+    color: #fff;
+}
+
+body.dark-mode .Navbar .menu-mobile {
+    background-color: #111;
+}
+
+body.dark-mode .contraste-btn {
+    background-color: #111;
+    color: #fff;
+}
+
+/* Sidebar */
+body.dark-mode .sidebar {
+    background-color: #202020;
+    color: #fff;
+}
+
+body.dark-mode .sidebar a {
+    color: #8ecbff;
+}
+
+/* Conteúdo principal */
+body.dark-mode .main {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+body.dark-mode .main h1,
+body.dark-mode .main h2,
+body.dark-mode .main h3,
+body.dark-mode .main p,
+body.dark-mode .main li {
+    color: #fff;
+}
+
+/* Esconde o botão no computador */
+.hamburger{
+    display:none;
+    margin-left:15px;
+    border:none;
+    background:none;
+    color:#ddd;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* Menu mobile */
+.menu-mobile{
+    display:none;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    .Navbar{
+        position:relative;
+    }
+
+    .logo a{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+        margin-left:auto;
+    }
+
+    .contraste-btn{
+        margin-left:0;
+        margin-right:10px;
+        font-size:16px;
+    }
+
+    .menu-mobile{
+
+        position:absolute;
+
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#1e3a63;
+
+        display:flex;
+        flex-direction:column;
+
+        max-height:0;
+        overflow:hidden;
+
+        transition:max-height .35s ease;
+    }
+
+    .menu-mobile a{
+
+        color:white;
+        text-decoration:none;
+        padding:18px;
+        text-align:center;
+        border-top:1px solid rgba(255,255,255,.1);
+    }
+
+    .menu-mobile.ativo{
+        max-height:200px;
+    }
+
+}
