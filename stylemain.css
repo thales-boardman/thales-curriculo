@@ -7,7 +7,7 @@ margin-bottom: -10px;
 
     .container {
       display: grid;
-      grid-template-columns: 280px 1fr;
+      grid-template-columns: 310px 1fr;
       min-height: 100vh;
       margin-bottom: -100px;
     }
@@ -20,7 +20,7 @@ margin-bottom: -10px;
     }
 
     .sidebar img {
-	width: 240px;
+	width: 270px;
 	height: 270px;
 	border-radius: 50%;
 	display: block;
@@ -114,6 +114,7 @@ margin-bottom: -10px;
     padding: 10px;
     font-size: 35px;
     border: solid 1px black;
+    
 }
 
 .Navbar a {
@@ -126,7 +127,6 @@ margin-bottom: -10px;
    color: #66b3ff;      
 }
 
-/* ========= CSS contraste ========= */
 .contraste-btn {
     margin-left: auto; /* empurra o botão para a direita */
     padding: 8px 16px;
@@ -137,9 +137,96 @@ margin-bottom: -10px;
     font-size: 18px;
 }
 
+/* ===== Dropdown Fonte ===== */
 
+.font-dropdown{
+    position:relative;
+    margin-left:40px;
+    margin-left: auto;
+}
+
+.font-toggle{
+
+    background:#1e3a63;
+    color:#ddd;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    padding:8px 15px;
+}
+
+.font-toggle:hover{
+    color:#66b3ff;
+}
+
+.font-menu{
+
+    position:absolute;
+    top:100%;
+    left:0;
+
+    background:#1e3a63;
+
+    min-width:180px;
+
+    display:flex;
+    flex-direction:column;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+
+    transition:.25s;
+}
+
+.font-menu button{
+
+    background:none;
+    border:none;
+    color:white;
+
+    padding:12px;
+    cursor:pointer;
+    text-align:left;
+}
+
+.font-menu button:hover{
+
+    background:#2b4d7d;
+}
+
+/* PC */
+.font-dropdown:hover .font-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* Mobile */
+.font-dropdown.ativo .font-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* ========= CSS contraste ========= */
 
 /* ===== MODO ESCURO ===== */
+
+body.dark-mode .font-toggle{
+    background:#111;
+    color:white;
+}
+
+body.dark-mode .font-menu{
+    background:#111;
+}
+
+body.dark-mode .font-menu button:hover{
+    background:#333;
+}
 
 body.dark-mode {
     background-color: #121212;
@@ -208,7 +295,7 @@ body.dark-mode .main li {
 
     .Navbar{
         position:relative;
-		width: 620px;
+        width: 620px;
     }
 
     .logo a{

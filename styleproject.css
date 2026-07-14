@@ -16,15 +16,41 @@ body {
       color: #000000;
       user-select: none;
       margin-left: 10px;
+      margin-top: 10px;
     }
 
-    .projects {
-      display: none;
-      margin-left: 28px;
-      margin-top: 8px;
-      padding: 8px;
-      border-left: 2px solid #666;
-    }
+  .projects {
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    transform: translateY(-10px);
+
+    margin-left: 28px;
+    margin-top: 8px;
+    padding: 0 8px;
+
+    border-left: 2px solid #666;
+
+    transition:
+        max-height .45s ease,
+        opacity .35s ease,
+        transform .35s ease,
+        padding .35s ease;
+}
+
+.projects.ativo {
+
+    max-height: 3000px;
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    padding: 8px;
+}
 
     .projects ul {
       list-style: none;
@@ -64,7 +90,7 @@ body {
 }
 
 
-/* ========= CSS contraste ========= */
+/* Contraste */
 
 .contraste-btn {
     margin-left: auto; /* empurra o botão para a direita */
@@ -76,9 +102,96 @@ body {
     font-size: 18px;
 }
 
+/* ===== Dropdown Fonte ===== */
 
+.font-dropdown{
+    position:relative;
+    margin-left:40px;
+    margin-left: auto;
+}
+
+.font-toggle{
+
+    background:#1e3a63;
+    color:#ddd;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    padding:8px 15px;
+}
+
+.font-toggle:hover{
+    color:#66b3ff;
+}
+
+.font-menu{
+
+    position:absolute;
+    top:100%;
+    left:0;
+
+    background:#1e3a63;
+
+    min-width:180px;
+
+    display:flex;
+    flex-direction:column;
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+
+    transition:.25s;
+}
+
+.font-menu button{
+
+    background:none;
+    border:none;
+    color:white;
+
+    padding:12px;
+    cursor:pointer;
+    text-align:left;
+}
+
+.font-menu button:hover{
+
+    background:#2b4d7d;
+}
+
+/* PC */
+.font-dropdown:hover .font-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* Mobile */
+.font-dropdown.ativo .font-menu{
+
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+/* ========= CSS contraste ========= */
 
 /* ===== MODO ESCURO ===== */
+
+body.dark-mode .font-toggle{
+    background:#111;
+    color:white;
+}
+
+body.dark-mode .font-menu{
+    background:#111;
+}
+
+body.dark-mode .font-menu button:hover{
+    background:#333;
+}
 
 body.dark-mode .Navbar {
     background-color: #111;

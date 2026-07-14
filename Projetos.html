@@ -21,6 +21,29 @@
             <a href="Projetos.html">Projetos</a>
         </div>
 
+    <div class="font-dropdown" id="font-dropdown">
+
+    <button class="font-toggle" id="font-toggle">
+        Tamanho da Fonte ▼
+    </button>
+
+    <div class="font-menu">
+
+        <button class="font-btn" data-size="14">
+            Pequena
+        </button>
+
+        <button class="font-btn" data-size="18">
+            Média
+        </button>
+
+        <button class="font-btn" data-size="22">
+            Grande
+        </button>
+
+        </div>
+    </div>
+
         <button id="toggle-theme" class="contraste-btn">
             Contraste
         </button>
@@ -38,13 +61,16 @@
 
  <h2>Projetos desenvolvidos e contribuições</h2> 
 
-  </div>
-  
-  <div class="folder" onclick="toggleProjects()">
-    📁 Projetos
-  </div>
+</div>
 
-  <div style="margin-left: 10px;" class="projects" id="projects">
+    <div class="folder" id="folderProfissionais">
+        <span id="folderIconProfissionais">📁</span>
+        Projetos Profissionais
+    </div>
+
+    <div class="projects" id="profissionais">
+
+         <div style="margin-left: 10px;">
     <ul>
       <li>🚀 Site Cusco — <a href="https://www.novohamburgo.rs.gov.br/cusco" target="_blank">Site Cusco Prefeitura</a><p>Site Cusco – Prefeitura - Criação de páginas internas utilizando Drupal, CSS e layout institucional.
 </p></li>
@@ -67,54 +93,28 @@
     </ul>
   </div>
 
-  <script>
-    function toggleProjects() {
-      const section = document.getElementById("projects");
-      section.style.display = section.style.display === "block" ? "none" : "block";
-    }
-  </script>
-
-<script>
+    </div>
 
 
-    const btn = document.getElementById('toggle-theme');
-    const body = document.body;
+    <div class="folder" id="folderPessoais">
+        <span id="folderIconPessoais">📁</span>
+        Projetos Pessoais
+    </div>
 
-    // Se existir preferência salva, aplica
-    if (localStorage.getItem('dark-mode') === 'true') {
-        body.classList.add('dark-mode');
-    }
+    <div class="projects" id="pessoais">
 
-    btn.addEventListener('click', function () {
-        body.classList.toggle('dark-mode');
+        <ul>
+            <li>🚧 Em desenvolvimento...</li>
+        </ul>
 
-        // Salva a preferência do usuário
-        localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-    });
+    </div>
 
+</div>
 
-</script>
+ 
 
+<script src="script.js"></script>
 
-
-<script>
-
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu-mobile");
-
-hamburger.addEventListener("click", () => {
-
-    menu.classList.toggle("ativo");
-
-    if(menu.classList.contains("ativo")){
-        hamburger.textContent="✖";
-    }else{
-        hamburger.textContent="☰";
-    }
-
-});
-
-</script>
 
 </body>
 </html>

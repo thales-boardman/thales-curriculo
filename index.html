@@ -24,6 +24,30 @@
             <a href="Projetos.html">Projetos</a>
         </div>
 
+<div class="font-dropdown" id="font-dropdown">
+
+    <button class="font-toggle" id="font-toggle">
+        Tamanho da Fonte ▼
+    </button>
+
+    <div class="font-menu">
+
+        <button class="font-btn" data-size="14">
+            Pequena
+        </button>
+
+        <button class="font-btn" data-size="18">
+            Média
+        </button>
+
+        <button class="font-btn" data-size="22">
+            Grande
+        </button>
+
+    </div>
+
+</div>
+
         <button id="toggle-theme" class="contraste-btn">
             Contraste
         </button>
@@ -31,6 +55,8 @@
         <button class="hamburger" id="hamburger">
             ☰
         </button>
+
+        
 
     </nav>
 </header>
@@ -139,45 +165,7 @@ Conclusão prevista: Outubro/2026</p>
   </div>
 <br>
 
-<script>
-
-
-    const btn = document.getElementById('toggle-theme');
-    const body = document.body;
-
-    // Se existir preferência salva, aplica
-    if (localStorage.getItem('dark-mode') === 'true') {
-        body.classList.add('dark-mode');
-    }
-
-    btn.addEventListener('click', function () {
-        body.classList.toggle('dark-mode');
-
-        // Salva a preferência do usuário
-        localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
-    });
-
-
-</script>
-
-<script>
-
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu-mobile");
-
-hamburger.addEventListener("click", () => {
-
-    menu.classList.toggle("ativo");
-
-    if(menu.classList.contains("ativo")){
-        hamburger.textContent="✖";
-    }else{
-        hamburger.textContent="☰";
-    }
-
-});
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
