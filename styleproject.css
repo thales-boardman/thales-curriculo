@@ -139,6 +139,7 @@ body.dark-mode a {
 
     .Navbar{
         position:relative;
+        width: 620px;
     }
 
     .logo a{
