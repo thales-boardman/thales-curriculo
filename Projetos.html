@@ -2,73 +2,34 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin-top: unset;
-      margin-right: unset;
-      margin-left: unset;
-
-    }
-
-    .folder {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-      user-select: none;
-    }
-
-    .projects {
-      display: none;
-      margin-left: 28px;
-      margin-top: 8px;
-      padding: 8px;
-      border-left: 2px solid #666;
-    }
-
-    .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .projects li {
-      margin-bottom: 6px;
-    }
-
-    .projects a {
-      text-decoration: none;
-      color: #0077cc;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    .Navbar a {
-  color: #ddd;              
-  text-decoration: none;    
-}
-
-.Navbar a:hover {
-   color: #66b3ff;      
-}
-
-  </style>
+  <link rel="stylesheet" href="styleproject.css">
 </head>
 <body>
 
-<header> 
-  <nav class="Navbar" style="background-color: #1e3a63; padding: 10px; font-size: 35px; border: solid 1px black;">
-    <a href='index.html'>Currículo</a>
-    <span>&nbsp;</span>
-    <a href='Projetos.html'>Projetos</a>
-    <!-- <a href='/contato'>Contato</a> -->
-  </nav>
+<header>
+    <nav class="Navbar">
+
+        <div class="logo">
+            <a href="index.html">Currículo</a>
+            <a href="Projetos.html">Projetos</a>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.html">Currículo</a>
+            <a href="Projetos.html">Projetos</a>
+        </div>
+
+        <button id="toggle-theme" class="contraste-btn">
+            Contraste
+        </button>
+
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+
+    </nav>
 </header>
 
 
@@ -79,7 +40,7 @@
 
   </div>
   
-  <div style="margin-left: 10px;" class="folder" onclick="toggleProjects()">
+  <div class="folder" onclick="toggleProjects()">
     📁 Projetos
   </div>
 
@@ -112,6 +73,49 @@
       section.style.display = section.style.display === "block" ? "none" : "block";
     }
   </script>
+
+<script>
+
+
+    const btn = document.getElementById('toggle-theme');
+    const body = document.body;
+
+    // Se existir preferência salva, aplica
+    if (localStorage.getItem('dark-mode') === 'true') {
+        body.classList.add('dark-mode');
+    }
+
+    btn.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+
+        // Salva a preferência do usuário
+        localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+    });
+
+
+</script>
+
+
+
+<script>
+
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu-mobile");
+
+hamburger.addEventListener("click", () => {
+
+    menu.classList.toggle("ativo");
+
+    if(menu.classList.contains("ativo")){
+        hamburger.textContent="✖";
+    }else{
+        hamburger.textContent="☰";
+    }
+
+});
+
+</script>
+
 </body>
 </html>
 
