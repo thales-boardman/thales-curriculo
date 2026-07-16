@@ -1,0 +1,145 @@
+{
+  "menuCurriculo": "Currículo",
+  "menuProjetos": "Projetos",
+  "menuFonte": "Tamanho da Fonte ▼",
+  "menuContraste": "Contraste",
+
+  "nome": "Thales Alves Boardman",
+
+  "cargo": "DESENVOLVEDOR WEB | TI JÚNIOR",
+
+  "contato": "Contato",
+
+  "habilidades": "Habilidades",
+
+  "linguas": "Idiomas",
+
+  "perfilTitulo": "Perfil Profissional",
+
+  "perfilTexto": "Sou Thales Alves Boardman, Desenvolvedor Web Júnior com experiência prática no setor público, atuando no desenvolvimento e manutenção de sites institucionais utilizando WordPress e Drupal. Contribuí para a criação de formulários internos, landing pages, automação de coleta de notícias para a Prefeitura, sistemas de coleta e classificação de e-mails, padronização de assinaturas de e-mail, testes no site da Femictec e no desenvolvimento da nova intranet municipal.",
+
+  "perfilTexto2": "Também possuo experiência com CodeIgniter 4, HTML, CSS, JavaScript, Git, Python e edição básica de imagens. Tenho compromisso em entregar soluções funcionais, organizadas, responsivas e acessíveis, buscando constantemente aprimorar minhas habilidades técnicas. Atualmente, procuro uma oportunidade para integrar uma equipe de tecnologia, contribuir com meus conhecimentos e continuar evoluindo como Desenvolvedor Web.",
+
+  "experienciaTitulo": "Experiência Profissional",
+
+  "empresa": "Prefeitura de Novo Hamburgo - Estagiário de TI / Desenvolvedor Web (2024 - 2026)",
+
+  "exp1": "Desenvolvimento e manutenção de sites em WordPress e Drupal;",
+  "exp2": "Criação de formulários internos e externos para diversos setores;",
+  "exp3": "Desenvolvimento da nova intranet institucional;",
+  "exp4": "Criação e padronização de assinaturas de e-mail;",
+  "exp5": "Ajustes em sites e criação de páginas no portal Mixmob;",
+  "exp6": "Implementação de módulos e páginas utilizando CodeIgniter 4;",
+  "exp7": "Melhorias de layout, acessibilidade e responsividade;",
+  "exp8": "Suporte técnico e manutenção de conteúdo institucional;",
+  "exp9": "Desenvolvimento de landing pages e sites informativos;",
+  "exp10": "Automação de processos com Python, incluindo coleta de notícias e classificação de e-mails.",
+
+  "formacaoTitulo": "Formação",
+
+  "formacao1": "Ensino Médio Completo",
+
+  "formacao2": "Tecnólogo em Desenvolvimento Web - Universidade Anhanguera - Previsão de conclusão: Outubro de 2026",
+
+  "formacao3": "Atualmente cursando a formação Full Stack Developer na DIO",
+
+  "softTitulo": "Competências Comportamentais",
+
+  "soft1": "Organização",
+
+  "soft2": "Trabalho em equipe",
+
+  "soft3": "Resolução de problemas",
+
+  "soft4": "Aprendizado rápido",
+
+  "soft5": "Resiliência",
+
+  "soft6": "Comunicação clara",
+
+  "soft7": "Boa organização",
+
+  "disponibilidade": "Disponível para início imediato",
+
+  "editorVideo": "edição de vídeos",
+
+  "editorImagem": "edição de imagens",
+
+  "certificados": "Certificados",
+
+  "webDesigner": "Web Designer",
+
+  "imageEditor": "Editor de Imagens",
+
+  "ideoEditor": "Editor de Vídeos",
+
+  "dreamweaver": "Adobe Dreamweaver",
+
+  "pythonJourney": "Certificado de Participação: Jornada Python",
+
+  "codeigniter4": "Certificado: Curso de CodeIgniter 4 – Desenvolvendo Sites de Qualidade",
+
+  "aiImmersion": "Certificado: Inteligência Artificial na Prática",
+
+  "ingles": "Inglês",
+
+  "Portugues": "Português",
+
+  "PHP": "PHP básico",
+
+  "Linkedin": "Meu LinkedIn",
+
+  "Git": "Meu GitHub",
+
+
+
+
+  "tituloProjetos": "Projetos desenvolvidos e contribuições",
+
+  "projetosProfissionais": "Projetos Profissionais",
+  "projetosPessoais": "Projetos Pessoais",
+
+  "pequeno": "Pequena",
+  "medio": "Média",
+  "grande": "Grande",
+
+  "verGithub": "📱 Ver no GitHub",
+
+  "cuscoTitulo": "🚀 Site Cusco",
+  "cuscoDescricao": "Site Cusco – Prefeitura - Criação de páginas internas utilizando Drupal, CSS e layout institucional.",
+
+  "formulariosTitulo": "💻 Formulários",
+  "formulariosDescricao": "Formulários internos – Prefeitura - Desenvolvimento de formulários personalizados para diferentes setores. Alguns formulários são externos, abertos ao público, enquanto outros são internos, sendo constantemente abertos e fechados, o que dificulta disponibilizar apenas um único link. Ao todo desenvolvi 68 formulários para a Prefeitura.",
+
+  "githubTitulo": "📱 GitHub",
+  "githubDescricao": "Os projetos principais são:",
+  "githubProjeto1": "• Assinatura Institucional - Gerador de assinaturas utilizado por servidores públicos.",
+  "githubProjeto2": "• Site WordPress (Mixmob) - Criação, configuração e ajustes de navegação.",
+  "githubProjeto3": "• Automação para classificação de notícias utilizando Python, Clarity API e Google Analytics API, enviando os dados para uma planilha.",
+  "githubProjeto4": "• Automação para coleta e classificação de e-mails. Como a classificação por palavras-chave não apresentou bons resultados, parte do processo passou a ser realizada manualmente para separar mensagens importantes de lixo eletrônico.",
+
+  "intranetTitulo": "💻 Nova Intranet",
+  "intranetDescricao": "Projeto ainda em andamento, apresentado através de um vídeo produzido pela equipe. Desenvolvimento do modelo inicial da nova intranet institucional utilizando CodeIgniter 4. Atuei na implementação de:",
+
+  "intranet1": "• Footer responsivo",
+  "intranet2": "• Sistema de busca de arquivos e ramais",
+  "intranet3": "• Página de login",
+  "intranet4": "• Upload, renomeação e exclusão de arquivos",
+  "intranet5": "• Atualização e gerenciamento de ramais pelo banco de dados",
+  "intranet6": "• Botão de contraste",
+  "intranet7": "• Avisos de 'Sair sem salvar' e 'Excluir ramal'",
+  "intranet8": "• Botões para aumentar e diminuir a fonte do site",
+  "intranet9": "• Menu com mais opções para ramais (copiar e-mail, editar e excluir)",
+  "intranet10": "• Alertas de sucesso, erro e aviso",
+
+  "intranetObjetivo": "O projeto tem como objetivo substituir a intranet anterior, que apresentava conteúdo desatualizado e baixa usabilidade.",
+
+  "githubPessoalDescricao": "Os principais projetos são:",
+  "curriculoProjeto": "• Meu Currículo - Desenvolvido utilizando HTML, CSS e JavaScript, hospedado no GitHub.",
+  "obraFacilProjeto": "• Landing Page 'Obra Fácil' (Projeto do Instituto Evoluir) - Projeto de curso utilizando boas práticas de HTML e CSS."
+
+
+
+}
+
+

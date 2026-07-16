@@ -12,46 +12,58 @@
     <nav class="Navbar">
 
         <div class="logo">
-            <a href="index.html">Currículo</a>
-            <a href="Projetos.html">Projetos</a>
+            <a href="index.html" data-i18n="menuCurriculo">Currículo</a>
+            <a href="Projetos.html" data-i18n="menuProjetos">Projetos</a>
         </div>
 
         <div class="menu-mobile" id="menu-mobile">
-            <a href="index.html">Currículo</a>
-            <a href="Projetos.html">Projetos</a>
+            <a href="index.html" data-i18n="menuCurriculo">Currículo</a>
+            <a href="Projetos.html" data-i18n="menuProjetos">Projetos</a>
         </div>
 
-    <div class="font-dropdown" id="font-dropdown">
+<div class="font-dropdown" id="font-dropdown" >
 
-    <button class="font-toggle" id="font-toggle">
+    <button class="font-toggle" id="font-toggle" data-i18n="menuFonte">
         Tamanho da Fonte ▼
     </button>
 
     <div class="font-menu">
 
-        <button class="font-btn" data-size="14">
+        <button data-i18n="pequeno" class="font-btn" data-size="14">
             Pequena
         </button>
 
-        <button class="font-btn" data-size="18">
+        <button data-i18n="medio" class="font-btn" data-size="18">
             Média
         </button>
 
-        <button class="font-btn" data-size="22">
+        <button data-i18n="grande" class="font-btn" data-size="22">
             Grande
         </button>
 
-        </div>
     </div>
 
-        <button id="toggle-theme" class="contraste-btn">
+</div>
+
+    <div class="language-switch">
+
+    <button onclick="mudarIdioma('pt')">
+        🇧🇷 PT
+    </button>
+
+    <button onclick="mudarIdioma('en')">
+        🇺🇸 EN
+    </button>
+
+</div>
+
+     <button id="toggle-theme" class="contraste-btn" data-i18n="menuContraste">
             Contraste
         </button>
 
         <button class="hamburger" id="hamburger">
             ☰
         </button>
-
     </nav>
 </header>
 
@@ -59,52 +71,56 @@
 <!-- Projetos/Ajudas/Trabalhos -->
   <div style="margin-left: 10px;">
 
- <h2>Projetos desenvolvidos e contribuições</h2> 
+ <h2 data-i18n="tituloProjetos">Projetos desenvolvidos e contribuições</h2> 
 
 </div>
 
-    <div class="folder" id="folderProfissionais">
+    <div class="folder" id="folderProfissionais" >
         <span id="folderIconProfissionais">📁</span>
-        Projetos Profissionais
+        <p data-i18n="projetosProfissionais">Projetos Profissionais</p>
     </div>
 
     <div class="projects" id="profissionais">
 
          <div style="margin-left: 10px;">
     <ul>
-      <li>🚀 Site Cusco — <a href="https://www.novohamburgo.rs.gov.br/cusco" target="_blank">Site Cusco Prefeitura</a><p>Site Cusco – Prefeitura - Criação de páginas internas utilizando Drupal, CSS e layout institucional.
+      <li>🚀 Site Cusco — <a href="https://www.novohamburgo.rs.gov.br/cusco" target="_blank" data-i18n="cuscoTitulo">Site Cusco Prefeitura</a><p data-i18n="cuscoDescricao">Site Cusco – Prefeitura - Criação de páginas internas utilizando Drupal, CSS e layout institucional.
 </p></li>
-      <li>💻 Formulários — <a href="https://www.novohamburgo.rs.gov.br/form/processo-seletivo-publico-simpl2" target="_blank">Formulários Prefeitura</a><p>Formulários internos – Prefeitura - Desenvolvimento de formulários personalizados para diferentes setores. Alguns formulário são externos, abertos para o público, outros já são internos, então está sempre fechando e abrindo, ficando difícil colocar apenas um link de formulário. Ao todo fiz 68 formulários para a Prefeitura.</p></li>
-      <li>📱 GitHub — <a href="https://github.com/thales-boardman?tab=repositories" target="_blank">Ver no GitHub</a><p>Os projetos principais são: <br><br>• Assinatura Institucional - Gerador de assinatura usado por servidores públicos;<br><br>• Landing Page “Obra Fácil” (Projeto do Instituto Evoluir) - Projeto de curso com boas práticas de HTML/CSS;<br><br>• Site WordPress (Mixmob) - Criação, configuração e ajustes de navegação;<br><br>• Automação para a classificação de nóticias, tanto usando Python quanto as API's do Clarity e do Google Analytics e inserindo todas as informações em uma planilha;<br><br>• Automação na coleta de e-mails e classificação dos mesmos (OBS: Via código e palavras chaves não foi de grande sucesso a classificação, então, em último caso, comecei a classificar todos os e-mails a mão, assim retirando lixos eletrônicos e separando eles dos e-mails importantes).</p></li>
-      <li>💻 Nova Intranet — <a href="https://www.youtube.com/watch?v=ZHB-f88vuvU" target="_blank">Nova Intranet</a><p>Projeto ainda em andamento, demonstrado através do vídeo criado pela equipe. Desenvolvimento de modelo inicial para a nova intranet institucional utilizando CodeIgniter 4. Atuei na implementação de:
+      <li>💻 Formulários — <a href="https://www.novohamburgo.rs.gov.br/form/processo-seletivo-publico-simpl2" target="_blank" data-i18n="formulariosTitulo">Formulários Prefeitura</a><p data-i18n="formulariosDescricao">Formulários internos – Prefeitura - Desenvolvimento de formulários personalizados para diferentes setores. Alguns formulário são externos, abertos para o público, outros já são internos, então está sempre fechando e abrindo, ficando difícil colocar apenas um link de formulário. Ao todo fiz 68 formulários para a Prefeitura.</p></li>
+      <li>📱 GitHub — <a href="https://github.com/thales-boardman?tab=repositories" target="_blank" data-i18n="verGithub">Ver no GitHub</a><p data-i18n="githubDescricao">Os projetos principais são: <br><br><p data-i18n="githubProjeto1">• Assinatura Institucional - Gerador de assinatura usado por servidores públicos;</p><p data-i18n="githubProjeto2">• Site WordPress (Mixmob) - Criação, configuração e ajustes de navegação;</p><p data-i18n="githubProjeto3">• Automação para a classificação de nóticias, tanto usando Python quanto as API's do Clarity e do Google Analytics e inserindo todas as informações em uma planilha;</p><p data-i18n="githubProjeto4">• Automação na coleta de e-mails e classificação dos mesmos (OBS: Via código e palavras chaves não foi de grande sucesso a classificação, então, em último caso, comecei a classificar todos os e-mails a mão, assim retirando lixos eletrônicos e separando eles dos e-mails importantes).</p></p></li>
+      <li>💻 Nova Intranet — <a href="https://www.youtube.com/watch?v=ZHB-f88vuvU" target="_blank" data-i18n="intranetTitulo">Nova Intranet</a><p data-i18n="intranetDescricao">Projeto ainda em andamento, demonstrado através do vídeo criado pela equipe. Desenvolvimento de modelo inicial para a nova intranet institucional utilizando CodeIgniter 4. Atuei na implementação de:
 
-<br><br>• Footer responsivo
-<br><br>• Sistema de busca de arquivos e ramais
-<br><br>• Página de login
-<br><br>• Upload, renomeação e exclusão de arquivos
-<br><br>• Atualização e gerenciamento de ramais através do banco de dados
-<br><br>• Botão contraste
-<br><br>• Avisos de "Sair sem salvar" e de "Excluir ramal", aparecem na tela avisando ao usuário
-<br><br>• Botões de aumentar e diminuir a fonte do site todo
-<br><br>• Botão de ver mais opções no ramal, como por exemplo "Copiar e-mail, editar e excluir"
-<br><br>• Alertas "Cadastro salvo com sucesso - verde", "Ocorreu um erro em sua solicitação - vermelho" e "Ocorreu um erro em sua solicitação - amarelo"
+<p data-i18n="intranet1">• Footer responsivo</p>
+<p data-i18n="intranet2">• Sistema de busca de arquivos e ramais</p>
+<p data-i18n="intranet3">• Página de login</p>
+<p data-i18n="intranet4">• Upload, renomeação e exclusão de arquivos</p>
+<p data-i18n="intranet5">• Atualização e gerenciamento de ramais através do banco de dados</p>
+<p data-i18n="intranet6">• Botão contraste</p>
+<p data-i18n="intranet7">• Avisos de "Sair sem salvar" e de "Excluir ramal", aparecem na tela avisando ao usuário</p>
+<p data-i18n="intranet8">• Botões de aumentar e diminuir a fonte do site todo</p>
+<p data-i18n="intranet9">• Botão de ver mais opções no ramal, como por exemplo "Copiar e-mail, editar e excluir"</p>
+<p data-i18n="intranet10">• Alertas "Cadastro salvo com sucesso - verde", "Ocorreu um erro em sua solicitação - vermelho" e "Ocorreu um erro em sua solicitação - amarelo"</p>
 
-<br><br>O projeto tem como <u>objetivo</u> substituir a intranet anterior, que apresentava conteúdo desatualizado e baixa usabilidade.</p></li>
+<p data-i18n="intranetObjetivo"> O projeto tem como <u>objetivo</u> substituir a intranet anterior, que apresentava conteúdo desatualizado e baixa usabilidade.</p></li>
     </ul>
   </div>
 
     </div>
 
 
-    <div class="folder" id="folderPessoais">
+    <div class="folder" id="folderPessoais"  >
         <span id="folderIconPessoais">📁</span>
-        Projetos Pessoais
+        <p data-i18n="projetosPessoais">Projetos Pessoais</p>
     </div>
 
     <div class="projects" id="pessoais">
 
         <ul>
-            <li>🚧 Em desenvolvimento...</li>
+            <li>📱 GitHub — <a href="https://github.com/thales-boardman?tab=repositories" target="_blank" data-i18n="verGithub">Ver no GitHub</a>
+                <p data-i18n="githubPessoalDescricao">Os projetos principais são: </p>
+                <p data-i18n="curriculoProjeto">• Meu Currículo - Até agora foi usado as linguagens HTML, CSS e Javascript para fazer esse site e coloca-lo no Github;</p>
+                <p data-i18n="obraFacilProjeto">• Landing Page “Obra Fácil” (Projeto do Instituto Evoluir) - Projeto de curso com boas práticas de HTML/CSS;</p>
+                </li>
         </ul>
 
     </div>

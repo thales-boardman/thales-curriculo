@@ -15,32 +15,32 @@
     <nav class="Navbar">
 
         <div class="logo">
-            <a href="index.html">Currículo</a>
-            <a href="Projetos.html">Projetos</a>
+            <a href="index.html" data-i18n="menuCurriculo">Currículo</a>
+            <a href="Projetos.html" data-i18n="menuProjetos">Projetos</a>
         </div>
 
         <div class="menu-mobile" id="menu-mobile">
-            <a href="index.html">Currículo</a>
-            <a href="Projetos.html">Projetos</a>
+            <a href="index.html" data-i18n="menuCurriculo">Currículo</a>
+            <a href="Projetos.html" data-i18n="menuProjetos">Projetos</a>
         </div>
 
-<div class="font-dropdown" id="font-dropdown">
+<div class="font-dropdown" id="font-dropdown" >
 
-    <button class="font-toggle" id="font-toggle">
+    <button class="font-toggle" id="font-toggle" data-i18n="menuFonte">
         Tamanho da Fonte ▼
     </button>
 
     <div class="font-menu">
 
-        <button class="font-btn" data-size="14">
+        <button data-i18n="pequeno" class="font-btn" data-size="14">
             Pequena
         </button>
 
-        <button class="font-btn" data-size="18">
+        <button data-i18n="medio" class="font-btn" data-size="18">
             Média
         </button>
 
-        <button class="font-btn" data-size="22">
+        <button data-i18n="grande" class="font-btn" data-size="22">
             Grande
         </button>
 
@@ -48,7 +48,19 @@
 
 </div>
 
-        <button id="toggle-theme" class="contraste-btn">
+<div class="language-switch">
+
+    <button onclick="mudarIdioma('pt')">
+        🇧🇷 PT
+    </button>
+
+    <button onclick="mudarIdioma('en')">
+        🇺🇸 EN
+    </button>
+
+</div>
+
+        <button id="toggle-theme" class="contraste-btn" data-i18n="menuContraste">
             Contraste
         </button>
 
@@ -67,100 +79,97 @@
     <aside class="sidebar">
       <img src="Foto perfil boa.jpg" alt="Foto de perfil">
 
-      <h2>Contato</h2>
+      <h2 data-i18n="contato">Contato</h2>
 	  <p><a href="mailto:thalesboardman@gmail.com" target="_blank">thalesboardman@gmail.com</a></p>
       <p><a href="https://wa.me/5551993617426" target="_blank">(51) 99361-7426</a></p>
       <p><a href="https://www.instagram.com/thales_boardman/" target="_blank">Instagram: thales_boardman</p></a>
-      <p><a href="https://www.linkedin.com/in/thales-boardman-898284258/" target="_blank">Meu Linkedin</p></a>
-      <p><a href="https://github.com/thales-boardman" target="_blank">Meu Github</p></a>
+      <p><a href="https://www.linkedin.com/in/thales-boardman-898284258/" target="_blank" data-i18n="Linkedin">Meu Linkedin</p></a>
+      <p><a href="https://github.com/thales-boardman" target="_blank" data-i18n="Git" >Meu Github</p></a>
 
-      <h2>Habilidades</h2>
+      <h2 data-i18n="habilidades">Habilidades</h2>
       <ul>
         <li style="margin-bottom: 10px;">HTML / CSS / JavaScript</li>
         <li style="margin-bottom: 10px;">WordPress</li>
         <li style="margin-bottom: 10px;">CodeIgniter 4</li>
         <li style="margin-bottom: 10px;">VS Code</li>
         <li style="margin-bottom: 10px;">Drupal</li>
-        <li style="margin-bottom: 10px;">Editor de imagens</li>
-        <li style="margin-bottom: 10px;">Editor de vídeos</li>
+        <li style="margin-bottom: 10px;" data-i18n="editorImagem" >Editor de imagens</li>
+        <li style="margin-bottom: 10px;" data-i18n="editorVideo" >Editor de vídeos</li>
         <li style="margin-bottom: 10px;">GitHub</li>
         <li style="margin-bottom: 10px;">Landing pages</li>
-		<li style="margin-bottom: 10px;">PHP básico</li>
+		    <li style="margin-bottom: 10px;" data-i18n="PHP">PHP básico</li>
         <li >Python</li>
       </ul>
 
-      <h2>Línguas</h2>
+      <h2 data-i18n="linguas">Línguas</h2>
       <ul>
-        <li style="margin-bottom: 10px;">Inglês</li>
-        <li>Português</li>
+        <li style="margin-bottom: 10px;" data-i18n="ingles" >Inglês</li>
+        <li data-i18n="Portugues">Português</li>
       </ul>
 
-      <h2>Certificados</h2>
-      <ul>
-        <li style="margin-bottom: 10px;">Web Designer</li>
-        <li style="margin-bottom: 10px;">Editor de Imagens</li>
-        <li style="margin-bottom: 10px;">Editor de Vídeos</li>
-        <li style="margin-bottom: 10px;">Adobe Dreamweaver</li>
-        <li style="margin-bottom: 10px;">Certificado Participação da Jornada Python</li>
-		<li style="margin-bottom: 10px;">Certificado Curso de CodeIgniter 4 - Desenvolva Sites com Qualidade</li>
-        <li>Certificado Imersão Inteligência Artificial na prática</li>
-      </ul>
+<h2 data-i18n="certificados">Certificados</h2>
+
+<ul>
+  <li data-i18n="webDesigner" style="margin-bottom: 10px;">Web Designer</li>
+  <li data-i18n="imageEditor" style="margin-bottom: 10px;">Editor de Imagens</li>
+  <li data-i18n="videoEditor" style="margin-bottom: 10px;">Editor de Vídeos</li>
+  <li data-i18n="dreamweaver" style="margin-bottom: 10px;">Adobe Dreamweaver</li>
+  <li data-i18n="pythonJourney" style="margin-bottom: 10px;">Certificado Participação da Jornada Python</li>
+  <li data-i18n="codeigniter4" style="margin-bottom: 10px;">Certificado Curso de CodeIgniter 4 - Desenvolva Sites com Qualidade</li>
+  <li data-i18n="aiImmersion">Certificado Imersão Inteligência Artificial na prática</li>
+</ul>
     </aside>
 
 
     <!-- COLUNA DIREITA -->
-    <main class="main">
-      <h1>Thales Alves Boardman</h1>
-      <h3>DESENVOLVEDOR WEB | TI JÚNIOR</h3>
+    <main class="main" >
+      <h1 data-i18n="nome">Thales Alves Boardman</h1>
+      <h3 data-i18n="cargo">DESENVOLVEDOR WEB | TI JÚNIOR</h3>
 
       <section>
-        <h2>Perfil Pessoal</h2>
-        <p>Sou Thales Alves Boardman, Desenvolvedor Web Júnior com experiência prática no setor público, atuando na criação e manutenção de sites institucionais em WordPress e Drupal. Participei do desenvolvimento de formulários internos, landing pages, automação de coleta de notícias para a Prefeitura, coleta e classificação de e-mails, padronização de assinaturas de e-mails, teste do site da Femictec e da nova intranet da Prefeitura de Novo Hamburgo.<br><br>
-
-Também possuo experiência com CodeIgniter 4, HTML, CSS, JavaScript, Git, Python e edição básica de imagens. Sou focado em entregar soluções funcionais, organizadas e responsivas, com atenção à acessibilidade e facilidade de uso. Busco oportunidade para integrar equipes de tecnologia, contribuir com meus conhecimentos e continuar evoluindo como desenvolvedor web.</p>
+        <h2 data-i18n="perfilTitulo">Perfil Pessoal</h2>
+        <p data-i18n="perfilTexto">Sou Thales Alves Boardman, Desenvolvedor Web Júnior com experiência prática no setor público, atuando na criação e manutenção de sites institucionais em WordPress e Drupal. Participei do desenvolvimento de formulários internos, landing pages, automação de coleta de notícias para a Prefeitura, coleta e classificação de e-mails, padronização de assinaturas de e-mails, teste do site da Femictec e da nova intranet da Prefeitura de Novo Hamburgo.<br>
+        <p data-i18n="perfilTexto2">Também possuo experiência com CodeIgniter 4, HTML, CSS, JavaScript, Git, Python e edição básica de imagens. Sou focado em entregar soluções funcionais, organizadas e responsivas, com atenção à acessibilidade e facilidade de uso. Busco oportunidade para integrar equipes de tecnologia, contribuir com meus conhecimentos e continuar evoluindo como desenvolvedor web.</p>
       </section>
 
       <section>
-        <h2>Experiências</h2>
-        <p>Experiência Profissional — Prefeitura de Novo Hamburgo
-Estagiário de TI / Desenvolvedor Web
-(2024 – 2026)</p>
+        <h2 data-i18n="experienciaTitulo">Experiências</h2>
+        <p data-i18n="empresa">Experiência Profissional — Prefeitura de Novo Hamburgo - Estagiário de TI / Desenvolvedor Web (2024 – 2026)</p>
         <ul>
-          <li>Desenvolvimento e manutenção de sites WordPress e Drupal;</li>
-          <li>Criação de formulários internos e externos para diversos setores;</li>
-          <li>Desenvolvimento da nova intranet institucional;</li>
-          <li>Criação e padronização de assinaturas de e-mail;</li>
-          <li>Ajustes e criação de páginas no portal Mixmob;</li>
-          <li>Implementação de módulos e páginas usando CodeIgniter 4;</li>
-          <li>Alteração de layout, estrutura, acessibilidade e responsividade;</li>
-          <li>Suporte técnico e manutenção de conteúdo institucional;</li>
-          <li>Criação de landing pages e páginas informativas;</li>
-	      <li>Automação de processos usando Python (coleta de notícias e coleta e classificação de e-mails).</li>
+          <li data-i18n="exp1">Desenvolvimento e manutenção de sites WordPress e Drupal;</li>
+          <li data-i18n="exp2">Criação de formulários internos e externos para diversos setores;</li>
+          <li data-i18n="exp3">Desenvolvimento da nova intranet institucional;</li>
+          <li data-i18n="exp4">Criação e padronização de assinaturas de e-mail;</li>
+          <li data-i18n="exp5">Ajustes e criação de páginas no portal Mixmob;</li>
+          <li data-i18n="exp6">Implementação de módulos e páginas usando CodeIgniter 4;</li>
+          <li data-i18n="exp7">Alteração de layout, estrutura, acessibilidade e responsividade;</li>
+          <li data-i18n="exp8">Suporte técnico e manutenção de conteúdo institucional;</li>
+          <li data-i18n="exp9">Criação de landing pages e páginas informativas;</li>
+	      <li data-i18n="exp10">Automação de processos usando Python (coleta de notícias e coleta e classificação de e-mails).</li>
         </ul>
       </section>
 
       <section>
-        <h2>Formação</h2>
-        <p>Ensino Médio — Concluído</p>
-        <p>Superior de Tecnologia em Desenvolvimento Web — Anhanguera
-Conclusão prevista: Outubro/2026</p>
-		<p>Cursando Fullstack Developer na DIO</p>
+        <h2 data-i18n="formacaoTitulo">Formação</h2>
+        <p data-i18n="formacao1">Ensino Médio — Concluído</p>
+        <p data-i18n="formacao2">Superior de Tecnologia em Desenvolvimento Web — Anhanguera - Conclusão prevista: Outubro/2026</p>
+		    <p data-i18n="formacao3">Cursando Fullstack Developer na DIO</p>
       </section>
 
       <section>
-        <h2>Habilidades Comportamentais (Soft Skills)</h2>
+        <h2 data-i18n="softTitulo">Habilidades Comportamentais (Soft Skills)</h2>
         <ul>
-          <li>Organização;</li>
-          <li>Capacidade em trabalho em equipe;</li>
-          <li>Foco em resolver problemas;</li>
-          <li>Boa organização;</li>
-          <li>Aprendizado rápido;</li>
-          <li>Resiliente;</li>
-          <li>Comunicação direta.</li>
+          <li data-i18n="soft1">Organização;</li>
+          <li data-i18n="soft2">Capacidade em trabalho em equipe;</li>
+          <li data-i18n="soft3">Foco em resolver problemas;</li>
+          <li data-i18n="soft7">Boa organização;</li>
+          <li data-i18n="soft4">Aprendizado rápido;</li>
+          <li data-i18n="soft5">Resiliente;</li>
+          <li data-i18n="soft6">Comunicação direta.</li>
         </ul>
       </section>
 		<br><br><br><br>
-     <h1>Disponibilidade: imediata</h1>
+     <h1 data-i18n="disponibilidade">Disponibilidade: imediata</h1>
     </main>
   </div>
 <br>

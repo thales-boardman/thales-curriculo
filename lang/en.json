@@ -1,0 +1,147 @@
+{
+  "menuCurriculo": "Resume",
+  "menuProjetos": "Projects",
+  "menuFonte":"Font Size ▼",
+  "menuContraste":"Contrast",
+
+  "nome": "Thales Alves Boardman",
+
+  "cargo": "WEB DEVELOPER | JUNIOR IT",
+
+  "contato": "Contact",
+
+  "habilidades": "Skills",
+
+  "linguas": "Languages",
+
+
+
+  "perfilTitulo": "Professional Profile",
+
+  "perfilTexto": "I'm Thales Alves Boardman, a Junior Web Developer with hands-on experience in the public sector, working on the development and maintenance of institutional websites using WordPress and Drupal. I have contributed to the creation of internal forms, landing pages, news collection automation for the City Hall, email collection and classification systems, standardized email signatures, testing of the Femictec website, and the new municipal intranet.",
+  "perfilTexto2": "I also have experience with CodeIgniter 4, HTML, CSS, JavaScript, Git, Python, and basic image editing. I am committed to delivering functional, organized, responsive, and accessible solutions while continuously improving my technical skills. I am currently seeking an opportunity to join a technology team, contribute with my knowledge, and continue growing as a Web Developer.", 
+
+
+  "experienciaTitulo": "Professional Experience",
+
+  "empresa": "Novo Hamburgo City Hall - IT Intern / Web Developer (2024 - 2026)",
+
+  "exp1": "Development and maintenance of WordPress and Drupal websites;",
+  "exp2": "Creation of internal and external forms for multiple departments;",
+  "exp3": "Development of the new institutional intranet;",
+  "exp4": "Creation and standardization of email signatures;",
+  "exp5": "Website adjustments and page creation on the Mixmob portal;",
+  "exp6": "Implementation of modules and pages using CodeIgniter 4;",
+  "exp7": "Layout improvements, accessibility enhancements, and responsive design;",
+  "exp8": "Technical support and maintenance of institutional content;",
+  "exp9": "Development of landing pages and informational websites;",
+  "exp10": "Process automation using Python, including news collection and email classification.",
+
+  "formacaoTitulo": "Education",
+
+  "formacao1": "High School Diploma",
+
+  "formacao2": "Higher Education in Web Development Technology - Anhanguera University - Expected graduation: October 2026",
+
+  "formacao3": "Currently enrolled in the Full Stack Developer program at DIO",
+
+  "softTitulo": "Soft Skills",
+
+  "soft1": "Organization",
+
+  "soft2": "Teamwork",
+
+  "soft3": "Problem-solving",
+
+  "soft4": "Fast learner",
+
+  "soft5": "Resilience",
+
+  "soft6": "Clear communication",
+
+  "soft7": "Good organization",
+
+  "disponibilidade": "Available to start immediately",
+
+  "editorVideo": "video editing",
+
+  "editorImagem": "image editing",
+
+
+  "certificados": "Certificates",
+
+  "webDesigner": "Web Designer",
+
+  "imageEditor": "Image Editor",
+
+  "ideoEditor": "Video Editor",
+
+  "dreamweaver": "Adobe Dreamweaver",
+
+  "pythonJourney": "Certificate of Participation: Python Journey",
+
+  "codeigniter4": "Certificate: CodeIgniter 4 Course – Develop Quality Websites",
+
+  "aiImmersion": "Certificate: Artificial Intelligence in Practice",
+
+  "ingles" : "English",
+
+  "Portugues" : "Portuguese",
+
+  "PHP" : "PHP basic",
+
+  "Linkedin" : "My Linkedin",
+
+  "Git" : "My Github",
+
+  "pequeno" : "Small",
+
+  "medio" : "Medium",
+  
+  "grande" : "Big",
+
+
+
+  
+  "tituloProjetos": "Developed Projects and Contributions",
+
+  "projetosProfissionais": "Professional Projects",
+  "projetosPessoais": "Personal Projects",
+
+  "verGithub": "📱 View on GitHub",
+
+  "cuscoTitulo": "🚀 Cusco Website",
+  "cuscoDescricao": "Cusco Website – City Hall - Creation of internal pages using Drupal, CSS, and the institutional layout.",
+
+  "formulariosTitulo": "💻 Forms",
+  "formulariosDescricao": "City Hall Forms - Development of custom forms for different departments. Some forms are public, while others are internal and are frequently opened and closed, making it difficult to provide a single permanent link. In total, I developed 68 forms for the City Hall.",
+
+  "githubTitulo": "📱 GitHub",
+  "githubDescricao": "Main projects include:",
+  "githubProjeto1": "• Institutional Email Signature - Signature generator used by public employees.",
+  "githubProjeto2": "• WordPress Website (Mixmob) - Website creation, configuration, and navigation improvements.",
+  "githubProjeto3": "• Automation for news classification using Python, the Clarity API, and Google Analytics API, exporting all information to a spreadsheet.",
+  "githubProjeto4": "• Automation for email collection and classification. Since keyword-based classification was not sufficiently accurate, part of the process was manually completed to separate important emails from spam.",
+
+  "intranetTitulo": "💻 New Intranet",
+  "intranetDescricao": "Project currently under development, presented through a video produced by the team. Initial development of the new institutional intranet using CodeIgniter 4. I contributed to implementing:",
+
+  "intranet1": "• Responsive footer",
+  "intranet2": "• File and extension search system",
+  "intranet3": "• Login page",
+  "intranet4": "• File upload, rename, and deletion",
+  "intranet5": "• Extension management through the database",
+  "intranet6": "• Contrast mode button",
+  "intranet7": "• \"Leave without saving\" and \"Delete extension\" warning dialogs",
+  "intranet8": "• Buttons to increase and decrease the font size across the website",
+  "intranet9": "• Additional options menu for extensions (copy email, edit, and delete)",
+  "intranet10": "• Success, warning, and error notification messages",
+
+  "intranetObjetivo": "The project aims to replace the previous intranet, which had outdated content and poor usability.",
+
+  "githubPessoalDescricao": "Main personal projects include:",
+  "curriculoProjeto": "• My Resume - Developed using HTML, CSS, and JavaScript, and published on GitHub.",
+  "obraFacilProjeto": "• \"Obra Fácil\" Landing Page (Instituto Evoluir Project) - Course project developed following HTML and CSS best practices."
+}
+
+

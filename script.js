@@ -100,3 +100,43 @@ function criarPasta(botao, conteudo, icone){
 
 criarPasta("folderProfissionais","profissionais","folderIconProfissionais");
 criarPasta("folderPessoais","pessoais","folderIconPessoais");
+
+
+// Mudar Idioma
+
+
+
+async function mudarIdioma(idioma){
+
+    localStorage.setItem("idioma", idioma);
+
+    const resposta = await fetch(`lang/${idioma}.json`);
+
+    const textos = await resposta.json();
+
+    document.querySelectorAll("[data-i18n]").forEach(elemento=>{
+
+        const chave = elemento.dataset.i18n;
+
+        elemento.textContent = textos[chave] ?? elemento.textContent;
+
+    });
+
+}
+
+const idioma = localStorage.getItem("idioma") || "pt";
+
+mudarIdioma(idioma);
+
+function getTranslation(obj, path) {
+  return path.split(".").reduce((acc, part) => acc && acc[part], obj);
+}
+
+document.querySelectorAll("[data-i18n]").forEach(el => {
+  const key = el.dataset.i18n;
+  const text = getTranslation(translations, key);
+
+  if (text) {
+    el.textContent = text;
+  }
+});

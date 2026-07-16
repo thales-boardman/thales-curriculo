@@ -304,3 +304,34 @@ body.dark-mode a {
     }
 
 }
+
+
+/* Idiomas */
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 15px;
+}
+
+.language-switch button {
+    background: #fff;
+    color: #1e3a5f;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.language-switch button:hover {
+    background: #1e3a5f;
+    color: white;
+    border-color: white;
+}
+
+.language-switch button:active {
+    transform: scale(0.96);
+}
