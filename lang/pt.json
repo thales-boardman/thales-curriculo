@@ -6,7 +6,7 @@
 
   "nome": "Thales Alves Boardman",
 
-  "cargo": "DESENVOLVEDOR WEB | TI JÚNIOR",
+  "cargo": "DESENVOLVEDOR WEB | FULL STACK JÚNIOR",
 
   "contato": "Contato",
 
@@ -39,9 +39,9 @@
 
   "formacao1": "Ensino Médio Completo",
 
-  "formacao2": "Tecnólogo em Desenvolvimento Web - Universidade Anhanguera - Concluido - 28/07/2026",
+  "formacao2": "Tecnólogo em Desenvolvimento Web - Universidade Anhanguera - Concluído: Julho de 2026",
 
-  "formacao3": "Atualmente cursando a formação Full Stack Developer na DIO",
+  "formacao3": "TQI Fullstack Developer — DIO — 125 horas — Concluído em 03/09/2026",
 
   "softTitulo": "Competências Comportamentais",
 
@@ -60,6 +60,8 @@
   "soft7": "Boa organização",
 
   "disponibilidade": "Disponível para início imediato",
+
+  "desenweb" : "Certificado Superior de Tecnologia em Desenvolvimento Web - Faculdade",
 
   "editorVideo": "edição de vídeos",
 
@@ -81,9 +83,7 @@
 
   "aiImmersion": "Certificado: Inteligência Artificial na Prática",
 
-  "aiagent": "Certificado Agentes de IA N8N",
-
-  "desenweb": "Certificado Superior de Tecnologia em Desenvolvimento Web - Faculdade",
+  "fullstack": "Certificado: TQI Fullstack Developer — DIO — 125 horas",
 
   "ingles": "Inglês",
 
@@ -141,7 +141,11 @@
   "githubPessoalDescricao": "Os principais projetos são:",
   "curriculoProjeto": "• Meu Currículo - Desenvolvido utilizando HTML, CSS e JavaScript, hospedado no GitHub.",
   "obraFacilProjeto": "• Landing Page 'Obra Fácil' (Projeto do Instituto Evoluir) - Projeto de curso utilizando boas práticas de HTML e CSS.",
-  "maisProjetos": "Mais projetos pessoais em andamento"
+  "estoqueprodutos": "• Estoque-Produtos - Projeto desenvolvido em Java com Spring Boot para praticar o desenvolvimento e os testes unitários de uma API REST. A aplicação permite cadastrar, listar, buscar e excluir produtos. Também foram implementados testes unitários utilizando JUnit e Mockito para validar as principais funcionalidades do sistema;",
+  "sistemadespessas": "• Sistema de Aprovacao de Despesas - Este projeto foi desenvolvido em Java com o objetivo de demonstrar o funcionamento do padrão de projeto Chain of Responsibility. O sistema simula a aprovação de despesas em uma empresa. Cada responsável possui um limite de aprovação: o Gerente pode aprovar despesas até R$ 500, Diretor R$ 2mil e o Presidente até R$ 10mil. Acima disso é recusada;",
+  "bancojava": "• Banco Java - Banco fictício criado usando VsCode com a linguagem Java, criado de forma simples e direta para implementar o que aprendi e os conceitos que foram pedidos (Banco Java e Orientação a Objetos);",
+  "jogomemoria": "• Jogo da Memória - Jogo da memória feito usando VsCode e usando a linguagem JavaScript, não foram usado imagens e sim icones;",
+  "projetohistoria": "• Projeto Historia - Esse projeto que eu fiz é algo pessoal meu, é um site que você pode ler sobre acontecimentos históricos e aprender mais sobre eles, ainda está em desenvolvimento. Futuramente quero adicionar perfil para as pessoas, banco de dados, mais histórias, juntamente com a profundidade nas mesmas, isso tudo usando React."
 
 
 }

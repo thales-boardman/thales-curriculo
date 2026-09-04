@@ -6,7 +6,7 @@
 
   "nome": "Thales Alves Boardman",
 
-  "cargo": "WEB DEVELOPER | JUNIOR IT",
+  "cargo": "DESENVOLVEDOR WEB | FULL STACK JÚNIOR",
 
   "contato": "Contact",
 
@@ -41,9 +41,9 @@
 
   "formacao1": "High School Diploma",
 
-  "formacao2": "Higher Education in Web Development Technology - Anhanguera University - Completed - July 28, 2026",
+  "formacao2": "Higher Education in Web Development Technology - Anhanguera University - Graduated: July 2026",
 
-  "formacao3": "Currently enrolled in the Full Stack Developer program at DIO",
+  "formacao3": "TQI Fullstack Developer — DIO — 125 hours — Completed: September 2026",
 
   "softTitulo": "Soft Skills",
 
@@ -63,10 +63,11 @@
 
   "disponibilidade": "Available to start immediately",
 
-  "editorVideo": "video editing",
+  "desenweb" : "Higher Diploma in Technology in Web Development – ​​College",
 
-  "editorImagem": "image editing",
+  "editorVideo": "Video editing",
 
+  "editorImagem": "Image editing",
 
   "certificados": "Certificates",
 
@@ -74,7 +75,7 @@
 
   "imageEditor": "Image Editor",
 
-  "ideoEditor": "Video Editor",
+  "videoEditor": "Video Editor",
 
   "dreamweaver": "Adobe Dreamweaver",
 
@@ -84,9 +85,7 @@
 
   "aiImmersion": "Certificate: Artificial Intelligence in Practice",
 
-  "aiagent": "N8N AI Agents Certificate",
-
-  "desenweb": "Higher Diploma in Technology in Web Development – ​​College",
+  "fullstack": "Certificate: TQI Fullstack Developer — DIO — 125 hours",
 
   "ingles" : "English",
 
@@ -146,7 +145,11 @@
   "githubPessoalDescricao": "Main personal projects include:",
   "curriculoProjeto": "• My Resume - Developed using HTML, CSS, and JavaScript, and published on GitHub.",
   "obraFacilProjeto": "• \"Obra Fácil\" Landing Page (Instituto Evoluir Project) - Course project developed following HTML and CSS best practices.",
-  "maisProjetos": "More personal projects in progress"
+  "estoqueprodutos": "• Product Inventory – A project developed in Java with Spring Boot to practice developing and unit testing a REST API. The application allows users to register, list, search for, and delete products. Unit tests using JUnit and Mockito were also implemented to validate the system's core functionalities.",
+  "sistemadespessas": "• Expense Approval System – This project was developed in Java to demonstrate the *Chain of Responsibility* design pattern. The system simulates expense approval within a company. Each approver has a specific limit: the Manager can approve expenses up to R$ 500, the Director up to R$ 2,000, and the President up to R$ 10,000. Amounts exceeding this limit are rejected.",
+  "bancojava": "• Java Bank – A mock bank application created in VS Code using Java; it was built in a simple, straightforward manner to put into practice what I learned and the required concepts (Java banking and Object-Oriented Programming).",
+  "jogomemoria": "• Memory Game – A memory game built using VS Code and JavaScript; icons were used instead of images.",
+  "projetohistoria": "• History Project – This is a personal project of mine: a website where you can read about historical events and learn more about them. It is currently under development. In the future, I plan to add user profiles, a database, and more stories—with greater depth—all built using React."
 }
 
 
