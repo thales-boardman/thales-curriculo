@@ -142,6 +142,10 @@
 
   "intranetObjetivo": "The project aims to replace the previous intranet, which had outdated content and poor usability.",
 
+  "nft": "💻 NFT Marketplace – Jungle Gaming Technical Challenge – Development of a responsive frontend application using React and TypeScript. Features include a catalog with search, filters, and pagination; detail pages; a favorites system; a shopping cart; and a simulated checkout flow. The project incorporates REST API integration via Axios, state management with TanStack Query, navigation using TanStack Router, and real-time updates through Socket.IO. It also includes simulated authentication and session handling, API mocking with MSW, and automated end-to-end (E2E) testing using Playwright.",
+
+  "nft2": "View project",
+
   "githubPessoalDescricao": "Main personal projects include:",
   "curriculoProjeto": "• My Resume - Developed using HTML, CSS, and JavaScript, and published on GitHub.",
   "obraFacilProjeto": "• \"Obra Fácil\" Landing Page (Instituto Evoluir Project) - Course project developed following HTML and CSS best practices.",

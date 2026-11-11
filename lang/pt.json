@@ -138,6 +138,10 @@
 
   "intranetObjetivo": "O projeto tem como objetivo substituir a intranet anterior, que apresentava conteúdo desatualizado e baixa usabilidade.",
 
+  "nft": "💻 Marketplace de NFTs – Desafio Técnico Jungle Gaming - Desenvolvimento de uma aplicação frontend responsiva utilizando React e TypeScript. Implementação de catálogo com busca, filtros e paginação, páginas de detalhes, favoritos, carrinho e fluxo de checkout simulado. Integração com APIs REST utilizando Axios, gerenciamento de estado com TanStack Query, navegação com TanStack Router e atualizações em tempo real com Socket.IO. Implementação de autenticação e sessão simuladas, mocks de API com MSW e testes automatizados E2E com Playwright. ",
+
+  "nft2": "Ver projeto",
+
   "githubPessoalDescricao": "Os principais projetos são:",
   "curriculoProjeto": "• Meu Currículo - Desenvolvido utilizando HTML, CSS e JavaScript, hospedado no GitHub.",
   "obraFacilProjeto": "• Landing Page 'Obra Fácil' (Projeto do Instituto Evoluir) - Projeto de curso utilizando boas práticas de HTML e CSS.",
